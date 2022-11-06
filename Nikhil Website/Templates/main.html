@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Nikhilodeon1 - About Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: #009b21;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #009b21;
+    font-size: 50px;
+  }
+  
+.parallax {
+  /* The image used */
+  background-image: url('C:/Users/nikhi/OneDrive/Desktop/Nikhil Website/Templates/coolio2.jpg');
+
+  /* Full height */
+  height: 200px; 
+  width: 4000px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  .logo {
+    color: #009b21;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #009b21;
+  }
+  .carousel-indicators li {
+    border-color: #009b21;
+  }
+  .carousel-indicators li.active {
+    background-color: #009b21;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #009b21; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #009b21;
+    background-color: #fff !important;
+    color: #009b21;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #009b21 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #009b21;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #009b21;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #009b21 !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #009b21;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" style="overflow-x: hidden;background-color: #1a1919;">
+
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #d96000;">
+  <div class="container">
+    <div class="na-r-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Nikhilodeon1</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">About</a></li>
+        <li><a href="#activites">Projects</a></li>
+        <li><a href="#services">My Activities</a></li>
+        <li><a href="#pricing">Youtube</a></li>
+        <li><a href="#ec">My Classes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav><div class="parallax"></div>
+
+<div class="jumbotron text-center" style="background-color: #12176e;">
+  <h1>Nikhilodeon1</h1> 
+  <p>An 8th grader, at MHMS</p> 
+
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2  style="color: lightgray;">Hello! I'm Nikhil Tamvada!</h2><br>
+      <h4  style="color: lightgray;"><b>Hello I'm Nikhil. Nice to meet you. I am 13 years old. I am an 8th grader who currantly goes to Mission Hills Middle School. I live in Union City, California, USA. Some of my hobbies are: singing, coding, playing the guitar, solving puzzles, making 3D models, and much more! </b></h4><br>
+      <p>The school I go to is called MHMS, or Mission Hills Middle School. It is in Union City, California. In my school I have a total of 8 subjects: Math (Geometry), Science (Physical Sciences), English, History (United States History), Spanish (level 1), PE (phyical education), Art, and Leadership. Every day we have an average of 2 hours of homework</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+  </div>
+</div>
+
+<div id="activites" class="container-fluid bg-grey" style="background-color: #1a1919;">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-tasks logo slideanim"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2 style="color: lightgrey;">My Projects</h2><br>
+      <h4 style="color: lightgrey;">Over the past few years, I have worked on few projects projects:
+    <ol><li>Nik-Poll</li><li>Nik-Spell</li><li>Nik-Chat</li><li>Nikhil Page</li><li>An iOS app (aproval pending)</li><li>A reverse shell virus</li><li>Rock Paper Scissors Discord Bot (In development)</li><li>Minecraft Modding</li><li>And More!!</li></ol> </h4><br>
+      <p><strong>For detail:</strong> For more details about these projects, go to the youtube section, where some of these apps have a walkthrough tour. <br> REMINDER: Some of the apps listed above may be retired so they may not be useable right now.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2 style="color: lightgrey;">My Activites</h2>
+  <h4 style="color: lightgrey;">Behold, my extracirricluars!</h4>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-book logo-small"></span>
+      <h4 style="color:#ffffff;">Sanskrit</h4>
+      <p>Sanskrit is an ancient language of India, and has been around for more than 5,000 years. I have been learning Samskritam for 7 years now. I am now in my second to last year of Samskritam! For the first 7 years of my sanskrit education, I learned from <a href="https://samskritabharatiusa.org">Samskrita Bharati</a>, and I am currantly learning in <a href="https://safl.org">SAFL (Samskrit as a foreign language).</a></p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-music logo-small"></span>
+      <h4 style="color:#ffffff;">Sangeetam</h4>
+      <p>Sangeetam, or Karnatic classical music, is a type of singing from India. Many amazing singers know sangeetam. Sangeetam has been around for thousands of years. I started learning Sangeetam 6 years ago from private teachers, and I have come a very long way in my sangeetam journey. I have also sang to hundreds of people over the past few years.</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-music logo-small"></span>
+      <h4 style="color:#ffffff;">Guitar</h4>
+      <p>Playing the guitar is one thing that makes me feel relaxed. I learned guitar for 6 years, but currantly I am not taking any classes. I learned the guitar from a private instructor. I have played my guitar to hundreds of people, over the past few years as well. There are some videos of me playing the guitar in the youtube section below.</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <b><i class="fa fa-code" style="font-size:55px;color:#009b21"></i></b>
+
+      <h4 style="color:#ffffff;">Coding</h4>
+      <p>I have learned how to code 5 years ago, and since that point, I have made many projects, and made many snippets. I contributed in many coding programs, and I also teach coding to some of my close friends and family members. I know: Python, C#, JS, HTML, CSS, SQl, Swift, React, Flask, and Java. I am still learning many things in coding to this day, and plan on making better apps in the future</p>
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-music logo-small"></span>
+      <h4  style="color:#ffffff;">Music Making</h4>
+      <p>Over the past few weeks I have started making small songs and riffs with GaradgeBand, and FL studio. Although I haven't realeased any Music YET, I am planing to do so in the near future. So, watch out for the song(s)! I also have a colab coming out soon with one of my friends in school, so look out for that(those) song(s) as well. </p>
+    </div>
+    <div class="col-sm-4">
+      <i class="fa fa-soccer-ball-o" style="font-size:53px;color: #009b21;"></i>
+      <h4 style="color:#ffffff;">A sport</h4>
+      <p>The one type of extracirricluar activities that I don't have are sports. I love playing sports, but I can't really decide which sports to choose. As of now ( October 2022) I am leaning towards either soccer or basketball. Hopefully by Next year, 2023, I can decide a sport to play. Hopefully i can fill this last slot soon!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Pricing Section) -->
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Youtube</h2>
+    <h4>Check out all these videos</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+          <iframe width="360" height="215" src="https://www.youtube-nocookie.com/embed/05U_H8LGEE8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="panel-footer">
+          <h3>$19</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Lorem</p>
+          <p><strong>25</strong> Ipsum</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$29</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Lorem</p>
+          <p><strong>50</strong> Ipsum</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$49</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey" style="background-color: #1a1919;">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 1 week.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Union City, California, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +1 800-690(4201): (real phone number btw)</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> nikhilodeon.channel@gmail.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+<footer>
+<h1 style="width: 100%; text-align: center;"><a href="#myPage"><span class="glyphicon glyphicon-chevron-up icon" style="font-size: 50px; color:#009b21"></span></a></h1>
+</footer>
+<br><br>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage'], #sussy").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+
+
+</script>
+
+</body>
+</html>
